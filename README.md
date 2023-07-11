@@ -1,5 +1,7 @@
-# create-dev-portfolio
+## 🚀 본 포트폴리오는 우리밋_woorimIT 님의 유튜브를 참고해서 공부하며 작성하였습니다 :-)
+=>  [React & Node] 웹포트폴리오 만들기
 
+## create-dev-portfolio
 ![docker-badge](https://img.shields.io/badge/node-v16.18.0-green)
 ![docker-badge](https://img.shields.io/badge/npm-v8.19.2-green)
 ![dev-portfolio-badge](https://img.shields.io/badge/npm--dependency-dev--portfolio@v2.1.5-green)  
@@ -11,9 +13,7 @@
 
 `create-dev-portfolio` is a boiler-plate application developed using the [dev-portfolio](https://github.com/modern-agile-team/dev-portfolio) library.
 It supports both clients and servers, and if you follow the <a href="recommended-systems">recommended systems</a> below, anyone can easily develop the web.
-
 If you want to check the dev-portfolio library, please refer to the following link: [dev-portfolio](https://github.com/modern-agile-team/dev-portfolio)
-
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/56839474/194718430-5404fa1f-c24b-48a0-8730-15db2d3bde00.gif)
 
 ## List
