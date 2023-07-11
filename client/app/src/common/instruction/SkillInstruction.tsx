@@ -12,20 +12,8 @@ import styled from "styled-components";
 const SkillInstruction = ({ id }: { id: string }) => {
   return (
     <Wrap id={id}>
-      <h1>Skill</h1>
-      <span>
-        If you want to show each stack without using the Tech Stack List, you
-        can use this component.
-      </span>
-      <span>See dev-portfolio README.md for iconName assignments.</span>
       <SKillWrap>
-        <Skill />
-        <Skill
-          title="Typescript"
-          iconName="vscode-icons:file-type-typescript-official"
-        />
-        <Skill title="HTML-5" iconName="vscode-icons:file-type-html" />
-        <Skill title="CSS" iconName="vscode-icons:file-type-css" />
+        <Skill title="C++" iconName="logos:c-plus-plus" />
         <Skill title="Node.js" iconName="logos:nodejs-icon" />
         <Skill title="Express" iconName="logos:express" />
       </SKillWrap>

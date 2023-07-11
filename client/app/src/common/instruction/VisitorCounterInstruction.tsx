@@ -20,18 +20,6 @@ const VisitorCounterInstruction = ({ id }: { id: string }) => {
     <Wrap id={id}>
       <InstructionWrap>
         <h1>Visitor Counter</h1>
-        <span>
-          This component is a component that can check the number of visitors to
-          your portfolio.
-        </span>
-        <span>
-          It consists of three themes and consists of default, simple, and
-          big-size themes.
-        </span>
-        <span>
-          A personal server can be built through a docker-compose, and detailed
-          instructions on how to use it will be written.
-        </span>
         <ThemeWrap>
           <VisitorCounter
             todayVisitor={todayCounter}

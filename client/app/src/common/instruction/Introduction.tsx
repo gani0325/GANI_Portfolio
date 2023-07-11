@@ -11,12 +11,10 @@ import color from "../style/theme";
 const Introduction = ({ id }: { id: string }) => {
   return (
     <Wrap id={id}>
-      <span style={{ color: `${color.pointColor}` }}>Hi there!</span>
+      <h1>Introduction</h1>
+      <h2>인생의 디폴트값은 GO라는 좌우명처럼 열의와 열린 마음으로 끊임없이 성장하고 있는 이가은 입니다</h2>
+      <h2>긍정적이며 밝은 아이로 소신있고 당당한 자세를 갖춰 책임있는 역할을 끝까지 수행하고 항상 즐겁게 임하고자 합니다</h2>
       <br />
-      <span>인생의 디폴트값은 go다</span>
-      <span>
-      스트레스는 할 수 있는 능력이 있음에도 엑션으로 취하지 않는 것
-      </span>
     </Wrap>
   );
 };
@@ -24,12 +22,17 @@ const Introduction = ({ id }: { id: string }) => {
 export default Introduction;
 
 const Wrap = styled.div`
-  padding: 2em;
-  /* height: 30vh; */
+  padding: 1em 2.2em 0em 2.2em;
   display: flex;
   flex-direction: column;
-  font-size: 26px;
-  font-weight: 400;
-  /* text-align: center; */
-  /* justify-content: space-between; */
+  gap: 1em;
+  h1 {
+    margin: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid;
+  }
+  h2 {
+    margin: 0px 0px 10px 0px;
+    font-size: 19px;
+  }
 `;

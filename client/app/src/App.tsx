@@ -3,7 +3,7 @@ import {
   Header,
   TechStackList,
   Contact,
-  Intro,
+  // Intro,
   Gallery,
   Item,
   Masonry,
@@ -70,8 +70,14 @@ function App() {
         channels={[
           {
             name: "github",
-            redirectUrl: "https://",
-            color: `${color.pointColor}`,
+            redirectUrl: "https://github.com/gani0325",
+            color: `${color.subColor}`,
+            size: "30px",
+          },
+          {
+            name: "tistory",
+            redirectUrl: "https://alpaca-gt.tistory.com/",
+            color: `${color.subColor}`,
             size: "30px",
           },
         ]}
@@ -93,47 +99,11 @@ function App() {
         }}
       />
 
-      {/**
-       * Just introduction for dev-portfolio-app.
-       *
-       * If you want to view internal of Introduction,
-       * go to the './src/common/instruction/Introduction.tsx'
-       */}
       <Introduction id="['Manual Introduction', 'bx:home-smile']" />
 
-      {/**
-       * @component Intro
-       * {@link https://github.com/modern-agile-team/dev-portfolio#intro}
-       */}
-      <Intro
-        id="['Intro', 'clarity:cursor-hand-open-line']"
-        backgroundColor={color.mainColor}
-        titleColor={color.pointColor}
-        shortIntroColor="white"
-      />
-
-      {/**
-       * Just introduction for TechStackInput component.
-       *
-       * If you want to view internal of TeckstackInputInstruction,
-       * go to the './src/common/instruction/TeckstackInputInstruction.tsx'
-       */}
-      {/* <TeckstackInputInstruction id="['TechStackInput', 'fa:stack-overflow']" /> */}
-
-      {/**
-       * TechStackInput used only to find the logoName value in the TechStackList.
-       *
-       * @component TechStackInput
-       * {@link none}
-       */}
-      {/* <TechStackInput /> */}
-
-      {/**
-       * @component TechStackList
-       * {@link https://github.com/modern-agile-team/dev-portfolio#techstacklist}
-       */}
       <TechStackListTitle id="['TechStackList', 'bx:coin-stack']">
         Tech Stack List
+        
       </TechStackListTitle>
       <TechStackList
         techStackList={[
@@ -148,7 +118,7 @@ function App() {
               rateText: "82%",
               rateTextColor: `${color.lightGrey}`,
               backgroundColor: `${color.lightGrey}`,
-              colorTo: `${color.mainColor}`,
+              colorTo: `${color.skillColor}`,
               width: "100%",
               height: "35px",
             },
@@ -161,10 +131,10 @@ function App() {
               logoSize: "24px",
             },
             progressBarOption: {
-              rateText: "60%",
+              rateText: "72%",
               rateTextColor: `${color.lightGrey}`,
               backgroundColor: `${color.lightGrey}`,
-              colorTo: `${color.mainColor}`,
+              colorTo: `${color.skill2Color}`,
               width: "100%",
               height: "35px",
               // isBlinking: true,
@@ -178,34 +148,53 @@ function App() {
               logoSize: "24px",
             },
             progressBarOption: {
-              rateText: "55%",
+              rateText: "66%",
               rateTextColor: `${color.lightGrey}`,
               backgroundColor: `${color.lightGrey}`,
-              colorTo: `${color.mainColor}`,
+              colorTo: `${color.skillColor}`,
               width: "100%",
               height: "35px",
             },
           },
+          {
+            nameOption: {
+              name: "C++",
+              logoName: "C",
+              fontSize: "18px",
+              logoSize: "24px",
+            },
+            progressBarOption: {
+              rateText: "64%",
+              rateTextColor: `${color.lightGrey}`,
+              backgroundColor: `${color.lightGrey}`,
+              colorTo: `${color.skill2Color}`,
+              width: "100%",
+              height: "35px",
+              // isBlinking: true,
+            },
+          },
+          {
+            nameOption: {
+              name: "Express",
+              logoName: "express",
+              fontSize: "18px",
+              logoSize: "24px",
+            },
+            progressBarOption: {
+              rateText: "55%",
+              rateTextColor: `${color.lightGrey}`,
+              backgroundColor: `${color.lightGrey}`,
+              colorTo: `${color.skillColor}`,
+              width: "100%",
+              height: "35px",
+              // isBlinking: true,
+            },
+          },
         ]}
+        
       />
 
-      {/**
-       * @component ProgressBar
-       * {@link https://github.com/modern-agile-team/dev-portfolio#progressbar}
-       *
-       * If you want to view ProgressBar component,
-       * go to the './src/common/instruction/ProgressBarInstruction.tsx'
-       */}
-      {/* <ProgressBarInstruction id="['ProgressBar', 'ci:bar-chart-horizontal']" /> */}
-
-      {/**
-       * @component Skill
-       * {@link https://github.com/modern-agile-team/dev-portfolio#skill}
-       *
-       * If you want to view Skill component,
-       * go to the './src/common/instruction/SkillInstruction.tsx'
-       */}
-      <SkillInstruction id="['Skill', 'charm:stack']" />
+      {/* <SkillInstruction id="['Skill', 'charm:stack']" /> */}
 
       {/**
        * Just introduction for Carousel, Gallery and Masonry.
@@ -231,7 +220,7 @@ function App() {
        * @component Gallery
        * {@link https://github.com/modern-agile-team/dev-portfolio#gallery}
        */}
-      <Gallery id="['Gallery', 'clarity:image-gallery-line']">
+      <Gallery id="['Career', 'clarity:image-gallery-line']">
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((idx) => (
           <Item
             key={idx}
@@ -241,135 +230,15 @@ function App() {
         ))}
       </Gallery>
 
-      {/**
-       * @component Masonry
-       * {@link https://github.com/modern-agile-team/dev-portfolio#masonry}
-       */}
-      <Masonry id="['Masonry', 'ri:layout-masonry-line']">
-        <Image src="https://picsum.photos/600/600/?random" />
-        <Image src="https://picsum.photos/600/900/?random" />
-        <Image src="https://picsum.photos/300/400/?random" />
-        <Image src="https://picsum.photos/600/400/?random" />
-        <Image src="https://picsum.photos/600/900/?random" />
-        <Image src="https://picsum.photos/600/300/?random" />
-        <Image src="https://picsum.photos/400/700/?random" />
-        <Image src="https://picsum.photos/600/600/?random" />
-        <Image src="https://picsum.photos/600/800/?random" />
-        <Image src="https://picsum.photos/600/300/?random" />
-        <Image src="https://picsum.photos/600/500/?random" />
-        <Image src="https://picsum.photos/500/600/?random" />
-        <Image src="https://picsum.photos/700/600/?random" />
-      </Masonry>
 
-      {/**
-       * @component VisitorCounter
-       * {@link https://github.com/modern-agile-team/dev-portfolio#visitorcounter}
-       *
-       * If you want to view Card component,
-       * go to the './src/common/instruction/VisitorCounterInstruction.tsx'
-       */}
-      <VisitorCounterInstruction id="['VisitorCounter', 'mdi:counter']" />
 
-      {/**
-       * @component VisitorComment
-       * {@link https://github.com/modern-agile-team/dev-portfolio#visitorcomment}
-       */}
-      <VisitorCommentTitle id="['VisitorComment', 'bx:comment-dots']">
-        Visitor Comments
-      </VisitorCommentTitle>
-      <VisitorComment
-        backgroundColor={color.mainColor}
-        progressbarColor={color.pointColor}
-        handleChangeDescription={handleChangeDescription}
-        handleChangeNickname={handleChangeNickname}
-        handleChangePassword={handleChangePassword}
-        handleCreateComment={handleCreateComment}
-        comment={comment}
-        nickname={nickname}
-        password={password}
-        commentList={commentList}
-        buttonColor={color.mainColor}
-        listNicknameColor={color.mainColor}
-        listDateColor={color.pointColor}
-      />
 
-      {/**
-       * @component Card
-       * {@link https://github.com/modern-agile-team/dev-portfolio#card}
-       *
-       * If you want to view Card component,
-       * go to the './src/common/instruction/CardInstruction.tsx'
-       */}
-      <CardInstruction id="['Card', 'bi:card-list']" />
+      {/* <CardInstruction id="['Card', 'bi:card-list']" /> */}
 
-      {/**
-       * @component Experience
-       * {@link https://github.com/modern-agile-team/dev-portfolio#experience}
-       */}
       <Experience id="['Experience', 'carbon:list-boxes']" theme="vertical" />
-
-      {/**
-       * @component Channel
-       * {@link https://github.com/modern-agile-team/dev-portfolio#channel}
-       *
-       * @component Channels
-       * {@link https://github.com/modern-agile-team/dev-portfolio#channels}
-       *
-       * If you want to view Channel and Channels component,
-       * go to the './src/common/instruction/ChannelInstruction.tsx'
-       */}
-      <ChannelInstruction id="['Channel', 'fluent:channel-48-filled']" />
-
-      {/**
-       * Just introduction for Contact.
-       *
-       * If you want to view internal of ContactInstruction,
-       * go to the './src/common/instruction/ContactInstruction.tsx'
-       */}
-      <ContactInstruction />
-
-      {/**
-       * @component Contact
-       * {@link https://github.com/modern-agile-team/dev-portfolio#contact}
-       */}
-      <Contact
-        id="['Contact', 'fluent:contact-card-20-regular']"
-        titleColor={color.pointColor}
-        subTitleColor={color.lightGrey}
-        backgroundColor={color.mainColor}
-        channels={[
-          {
-            name: "github",
-            redirectUrl: "https://",
-            color: `${color.pointColor}`,
-          },
-          {
-            name: "facebook",
-            redirectUrl: "https://",
-            color: `${color.pointColor}`,
-          },
-        ]}
-        aboutMeInfos={[
-          {
-            title: "Where I live",
-            titleColor: `${color.pointColor}`,
-            description: "Seoul, Republic of Korea",
-            descriptionColor: `${color.lightGrey}`,
-          },
-          {
-            title: "Give me a call",
-            titleColor: `${color.pointColor}`,
-            description: "T. +82 (0)10 1234 5678",
-            descriptionColor: `${color.lightGrey}`,
-          },
-          {
-            title: "Or, why don’t you email me?",
-            titleColor: `${color.pointColor}`,
-            description: "dev-portfolio@gmail.com",
-            descriptionColor: `${color.lightGrey}`,
-          },
-        ]}
-      />
+      
+      {/* <ContactInstruction id="['Contact', 'fluent:contact-card-20-regular']" /> */}
+      
     </div>
   );
 }

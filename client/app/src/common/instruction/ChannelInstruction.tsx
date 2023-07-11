@@ -3,29 +3,10 @@ import React from "react";
 import styled from "styled-components";
 import color from "../style/theme";
 
-/**
- * @component Channel
- * {@link https://github.com/modern-agile-team/dev-portfolio#channel}
- *
- * @component Channels
- * {@link https://github.com/modern-agile-team/dev-portfolio#channels}
- *
- * If you want to view Channel and Channels component,
- * go to the './src/common/instruction/ChannelInstruction.tsx'
- */
 const ChannelInstruction = ({ id }: { id: string }) => {
   return (
     <Wrap id={id}>
       <h1>Channel &amp; Channels</h1>
-      <span>This component can use anywhere.</span>
-      <span>
-        Typically, it can be added to the Header and Contact components and
-        used.
-      </span>
-      <span>
-        Use Channel if you want to use icons alone or Channels if you want to
-        use multiple icons.
-      </span>
       <ChannelWrap>
         <div className="Channel">
           <h2>Channel</h2>

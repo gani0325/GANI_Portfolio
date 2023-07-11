@@ -4,17 +4,8 @@ import styled from "styled-components";
 const DisplayPortfolioInstruction = () => {
   return (
     <Wrap>
-      <h1>Show your career &amp; portfolio</h1>
-      <span>
-        The three components below are created for use in various areas,
-        including your career, experience, and portfolio.
-      </span>
-      <span>There are three components: Carousel, Gallery, and Masonry.</span>
-      <span>
-        In common, all components need images, so if you want to write only in
-        text, use Experience components.
-      </span>
-      <span>For more information on using components, see README.md.</span>
+       <br />
+      <h1>Career</h1>
     </Wrap>
   );
 };

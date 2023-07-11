@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import color from "../style/theme";
 
 /**
  * Just introduction for Contact.
@@ -7,18 +8,31 @@ import styled from "styled-components";
  * If you want to view internal of ContactInstruction,
  * go to the './src/common/instruction/ContactInstruction.tsx'
  */
-const ContactInstruction = () => {
+const ContactInstruction = ({ id }: { id: string }) => {
   return (
-    <Wrap>
-      <h1>Contact</h1>
-      <span>
-        This component is freedom to fill out the necessary parts such as your
-        information, contact network, etc.
-      </span>
-      <span>
-        The script written below is an example, and fill it in with the
-        information you want to provide!
-      </span>
+    <Wrap id={id}>
+            <h1>Contact</h1>
+      <span style={{ color: `${color.pointColor}` }}>Hi there!</span>
+      {/* aboutMeInfos={[
+                {
+                  title: "Where I live",
+                  titleColor: color.pointColor,
+                  description: "Siheung Gyeonggi-do, Republic of Korea",
+                  descriptionColor: `${color.lightGrey}`,
+                },
+                {
+                  title: "Give me a call",
+                  titleColor: `${color.pointColor}`,
+                  description: "T. +82 (0)10 6503 2334",
+                  descriptionColor: `${color.lightGrey}`,
+                },
+                {
+                  title: "My email",
+                  titleColor: `${color.pointColor}`,
+                  description: "lge000325@gmail.com",
+                  descriptionColor: `${color.lightGrey}`,
+                }
+              ]} */}
     </Wrap>
   );
 };
